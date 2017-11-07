@@ -1,9 +1,9 @@
 var game = {};
 
 
-var class = function(){return {id:9999,levels:0};};
+var clas = function(){return {id:9999,levels:0};};
 var commonerClass = function(){
-var o = class();
+var o = clas();
 o.id = 1;
 return o;
 };
