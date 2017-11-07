@@ -48,7 +48,7 @@ return {hp:1+w+n/100.0,maxhp:1+w+n/100.0,dmg:1,takeHit:function(d){this.hp-=d;if
 };
 
 
-game.story = {w:1,n:0,advance:function(){if(game.story.n<100)game.story.n++;else{game.story.w++;game.story.n=1;}game.enemies.cur.push(game.enemies.gen(game.story.w,game.story.n));}};
+game.story = {w:1,n:0,advance:function(){if(game.story.n<100)game.story.n++;else{game.story.w++;game.story.n=1;}game.enemies.cur.push(game.enemies.gen(game.story.w,game.story.n));document.getElementById("WOcurrent").innerHTML=game.story.w;document.getElementById("NDcurrent").innerHTML=game.story.n;}};
 
 
 game.loop = function(){
