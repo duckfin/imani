@@ -43,7 +43,7 @@ default:return 0;break;
 game.enemies = {
 cur:[],
 gen: function(w,n){
-return {hp:1+w+n/100.0,maxhp:1+w+n/100.0,dmg:1,takeHit:function(d){this.hp-=d;if(this.hp<=0)game.enemies.cur.splice(game.enemies.cur.indexOf(this),1);document.getElementById("ENHPcurrent").innerHTML=this.hp;document.getElementById("ENHPmax").innerHTML=this.maxhp;}};
+return {hp:1+w+n/100.0,maxhp:1+w+n/100.0,dmg:1,takeHit:function(d){this.hp-=d;if(this.hp<=0)game.enemies.cur.splice(game.enemies.cur.indexOf(this),1);document.getElementById("ENHPcurrent").innerHTML=this.hp.toFixed(2);document.getElementById("ENHPmax").innerHTML=this.maxhp.toFixed(2);}};
 }
 };
 
