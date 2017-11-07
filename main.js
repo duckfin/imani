@@ -52,7 +52,7 @@ game.story = {w:1,n:0,advance:function(){if(game.story.n<100)game.story.n++;else
 
 
 game.loop = function(){
-
+console.log("loop");
 if(game.enemies.cur.length==0) game.story.advance();
 for(var i=0;i<game.mandates.active.length;i++){
 if(game.mandates.evaluate(game.mandates.active[i])) break;
